@@ -13,6 +13,7 @@ export const ENV:IEnv = {
 		pw: process.env.DBPw || 'Navin12345',
 		account: process.env.DBAccount,
 		uri: (user: string, pw :string, name :string, account: string) => {
+			return process.env.LOCAL_URL;
 			return `mongodb+srv://${user}:${pw}${account}.gklxn.mongodb.net/${name}?retryWrites=true&w=majority`
 		}
 	},

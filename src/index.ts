@@ -7,8 +7,8 @@ const { routerTemplate }  = require('./routes/sample-router.js');
 const port: string = env().port ?? '8080';
 let dbConString;
 
-console.log( "Starting = =================",env(),env().stage, env().port)
-console.log( "Starting = =================",env().db)
+// console.log( "Starting = =================",env(),env().stage, env().port)
+// console.log( "Starting = =================",env().db)
 try {
   dbConString = env().db.uri(
     env().db.user,
